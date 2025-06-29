@@ -1,0 +1,86 @@
+Project Goal
+Build a real-time, secure video collaboration tool with:
+
+🔴 Video/audio conferencing
+
+💬 Instant chat
+
+🖥 Screen sharing
+
+📂 File sharing
+
+🧑‍🤝‍🧑 Group management
+
+🔐 User authentication & encryption
+
+🧑‍🎨 Collaborative whiteboard
+
+🧠 Advanced Features List (Divided by Modules)
+🔐 1. User Authentication & Security
+Feature	Description
+✅ Registration/Login	Email, username, and password with secure hashing (bcrypt + JWT)
+✅ Google Login (OAuth2)	Optional, for quick access
+✅ Role Management	Admin, Host, Participant, Guest
+✅ Session Management	JWT stored in cookies/localStorage + auto-logout
+✅ End-to-End Encryption	Secure chat + signaling (AES-256 or WebCrypto)
+✅ Rate Limiting & Validation	Protect against spam, brute force
+
+📹 2. Video + Audio Communication
+Feature	Description
+✅ Peer-to-peer Calling	WebRTC-based audio/video (multi-user mesh network)
+✅ Room-based Communication	Rooms created via unique URL / room ID
+✅ Join with Camera or Mic Off	Optional before joining
+✅ UI Controls	Mute/unmute, video on/off, leave room
+✅ Speaker View + Grid View	Dynamic UI layout based on participants
+
+🖥️ 3. Screen Sharing
+Feature	Description
+✅ One-click Screen Share	Share tab/window/full screen
+✅ Switch between camera/screen	Seamless toggle during session
+✅ Viewer's Auto Resize	Resizes view dynamically based on content
+
+💬 4. Real-Time Chat
+Feature	Description
+✅ Public Room Chat	Group text chat per room
+✅ Private Messaging (DM)	Peer-to-peer direct messages
+✅ Typing Indicators	Show who is typing in real-time
+✅ Message Read Receipts	Optional read confirmation
+
+🧑‍🎨 5. Collaborative Whiteboard
+Feature	Description
+✅ Live Drawing	Real-time synced whiteboard using Canvas API + Socket.IO
+✅ Drawing Tools	Pen, eraser, color picker, clear all
+✅ Multi-user Drawing	Everyone can draw together
+✅ Save Board	Export whiteboard as PNG/SVG
+
+📂 6. File Sharing
+Feature	Description
+✅ File Upload	Upload PDFs, docs, images during session
+✅ Real-Time Notifications	Notify all participants when file is shared
+✅ File Preview & Download	Inline preview (for images/docs) or download links
+✅ File Size Limits	Restrict max file size (e.g., 25MB)
+
+📊 7. Dashboard + Room Management
+Feature	Description
+✅ User Dashboard	View past rooms, call logs, uploaded files
+✅ Create & Manage Rooms	Name, password-protect, invite link
+✅ Admin Controls	Kick user, mute all, lock room
+
+🔔 8. Notifications & Real-Time Events
+Feature	Description
+✅ Real-Time Join/Leave	User join/leave popups with sound
+✅ Chat & File Alerts	Notifications for messages and files
+✅ In-Call Status Updates	Who’s muted, screen sharing, disconnected
+
+📱 9. Responsive & Cross-Platform
+Feature	Description
+✅ Mobile-first UI	Responsive layout for phones, tablets, desktops
+✅ Cross-browser Support	Chrome, Firefox, Edge, Safari
+✅ Light/Dark Mode	Optional theme toggle
+
+🔧 10. Optional Advanced Features
+Feature	Description
+📁 Cloud Storage (S3)	Store shared files in AWS S3
+📹 Recording & Playback	Record video calls (client-side or via third-party APIs)
+🌐 Internationalization (i18n)	Add language support (English, Amharic, etc.)
+📊 Call Analytics	Track session time, # of participants, bandwidth usage
